@@ -1,3 +1,5 @@
+__author__ = 'phil'
+
 import sys, random, smtplib
 
 subject = "Your Secret Santa assignment"
@@ -58,7 +60,7 @@ def make_pairs():
       pairs.append(Pair(person, assignment))
 
     return pairs
- 
+
 def make_message(pair):
     recipient = pair.get_email()
     assignee_name = pair.assignee.name
